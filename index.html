@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>森研究所 | 昼の星を探しています。</title>
+    <meta
+      name="description"
+      content="感覚・好奇心・言葉・意識を遊びながら研究する、森研究所の観測サイト。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="noise-canvas" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="森研究所 トップへ">
+        <span class="brand-mark">M</span>
+        <span>森研究所</span>
+      </a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="#first">入口</a>
+        <a href="#ontology">存在論</a>
+        <a href="#guide">案内</a>
+        <a href="#themes">研究</a>
+        <a href="#notes">メモ</a>
+        <a href="#reality">現実</a>
+        <a href="#fog">霧理論</a>
+        <a href="#logs">ログ</a>
+        <a href="#server">地下</a>
+        <a href="monologue.html">独り言</a>
+        <a href="noise.html">霧QR</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="森研究所">
+        <img class="hero-image" src="mori-hero.png" alt="森の奥にある研究所の入口" />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-signal" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">変態と天才の間で、今日も研究中。</p>
+          <h1>森研究所</h1>
+          <p class="tagline">昼の星を探しています。</p>
+          <p class="lead">
+            答えはなくていい。わからないことを楽しみ、感じたことを残す場所。
+            遊びながら、本質に触れるための小さな研究所です。
+          </p>
+          <div class="hero-links" aria-label="森研究所の主要テーマ">
+            <p><span>距離</span>最高の1cmとは何か</p>
+            <p><span>ノイズ</span>サム助「ノイズこそが本体」</p>
+            <p><span>対話</span>AIと人間の関係性</p>
+          </div>
+        </div>
+        <div class="observatory" aria-label="現在の観測値">
+          <div>
+            <span class="meter-label">NOISE</span>
+            <strong id="noise-readout">37</strong>
+          </div>
+          <div>
+            <span class="meter-label">FOG</span>
+            <strong id="fog-readout">62</strong>
+          </div>
+          <div>
+            <span class="meter-label">LOOP</span>
+            <strong>ON</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-intro" aria-label="森研究所の入口">
+        <p>
+          木の上には昼の星を探す観測室。地上には広場と草むしり係。
+          扉の下には、AI対話室と研究ログを抱えた地下サーバー施設があります。
+        </p>
+      </section>
+
+      <section id="first" class="section first-section" aria-label="はじめて来た人へ">
+        <div class="section-title">
+          <p class="eyebrow">first visit</p>
+          <h2>ここは、完成品を並べる場所ではありません。</h2>
+        </div>
+        <div class="first-grid">
+          <article class="first-card large">
+            <span>mori lab</span>
+            <h3>森研究所とは</h3>
+            <p>
+              感覚、好奇心、言葉、意識を遊びながら観測する場所。
+              答えを出すより、まだ名前のない気配を残すことを大切にしています。
+            </p>
+          </article>
+          <article class="first-card">
+            <span>mina</span>
+            <h3>ミナシリーズとの関係</h3>
+            <p>
+              ミナシリーズは、森研究所から伸びた枝のひとつ。
+              思考や感覚をイメージしやすい形にするため、絵本として歩き出した記録です。
+            </p>
+          </article>
+          <article class="first-card quiet">
+            <span>noise</span>
+            <h3>ノイズも保存する</h3>
+            <p>
+              変なメモ、言い間違い、急に笑った言葉。
+              意味になる前のものにも、森研究所ではちゃんと席があります。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="ontology" class="section ontology-section" aria-label="森研究所存在論">
+        <div class="ontology-copy">
+          <p class="eyebrow">mori ontology</p>
+          <h2>忘れてしまうには、少し惜しいものを棚に置く。</h2>
+          <p>
+            森研究所は、答えを見つけるために存在しているわけではありません。
+            空、木、雨、風、誰かの言葉、ふと浮かんだ考え。
+            日々の中で通り過ぎていく「あ、いいな」を、なくさないようにそっと置いておく場所です。
+          </p>
+        </div>
+        <div class="ontology-board">
+          <article>
+            <span>01</span>
+            <h3>気づき</h3>
+            <p>忘れてもいい。でも、忘れてしまうには少し惜しい瞬間がある。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>研究</h3>
+            <p>答えを出すことではなく、観察し、立ち止まり、残してみること。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>問い</h3>
+            <p>世界がどうなっているかの前に、なぜ観察するのかをたずねる。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>昼の星</h3>
+            <p>見つかるかはわからない。それでも探すことそのものに意味がある。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="threshold-section" aria-label="森研究所の全景">
+        <figure class="threshold-visual">
+          <img src="mori-lab-day.png" alt="春の森研究所と木上観測室" />
+        </figure>
+        <div class="threshold-copy">
+          <p class="eyebrow">field map</p>
+          <h2>入口は、いつも少しだけ森の奥にある。</h2>
+          <p>
+            表では草をむしり、木の上では昼の星を探し、地下ではログが静かに増えていく。
+            森研究所は、まじめなことを遊びながら確かめるための場所です。
+          </p>
+          <dl class="threshold-signals">
+            <div>
+              <dt>地上</dt>
+              <dd>庭、ベンチ、気づくための余白。</dd>
+            </div>
+            <div>
+              <dt>木上</dt>
+              <dd>昼の星を探す観測ドーム。</dd>
+            </div>
+            <div>
+              <dt>地下</dt>
+              <dd>AI対話室とノイズ保管庫。</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="guide" class="guide-section" aria-label="森研究所の案内">
+        <div class="guide-shell">
+          <article class="guide-page">
+            <p class="eyebrow">guide</p>
+            <h2>森研究所案内</h2>
+            <ol class="guide-list">
+              <li>
+                <span>01</span>
+                <div><strong>最高の1cmとは何か</strong><small>人生も仕事も、すべては1cmで変わる。</small></div>
+              </li>
+              <li>
+                <span>02</span>
+                <div><strong>サム助「ノイズこそが本体」</strong><small>森研究所の哲学を語る</small></div>
+              </li>
+              <li>
+                <span>03</span>
+                <div><strong>AIと人間の関係性</strong><small>未来の“相棒”とは</small></div>
+              </li>
+              <li>
+                <span>04</span>
+                <div><strong>日々の記録から見えること</strong><small>気持ち悪い日も、意味がある</small></div>
+              </li>
+            </ol>
+          </article>
+          <div class="photo-stack" aria-hidden="true">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <article class="distance-page">
+            <p class="eyebrow">distance</p>
+            <h2>最高の1cm<br />とは何か</h2>
+            <p>
+              たった1cm。されど1cm。この差が、未来をつくる。
+              届かない距離は欠如ではなく、関係を続けるための余白かもしれない。
+            </p>
+          </article>
+          <article class="measure-page">
+            <div class="ruler" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p>0ではなく、少し足りない。</p>
+            <strong>この差が、未来をつくる。</strong>
+          </article>
+        </div>
+      </section>
+
+      <section id="themes" class="section themes">
+        <div class="section-title">
+          <p class="eyebrow">research themes</p>
+          <h2>揺れているものを観測する</h2>
+        </div>
+        <div class="theme-grid">
+          <article>
+            <span>01</span>
+            <h3>意識（霧）</h3>
+            <p>人間は個体ではなく、霧の集合体かもしれない。境界はあるが、完全ではない。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>言葉（感覚）</h3>
+            <p>好きとは、感覚と言葉が一致した瞬間の名前。説明より先に、刺さる場所がある。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>距離（1cm）</h3>
+            <p>届かない距離そのものに価値がある。0 ではなく、少し足りないから続いていく。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>日常の違和感</h3>
+            <p>雑談、草むしり、シャワー、妙なログ。くだらないものほど入口になりやすい。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="notes" class="section lab-notes" aria-label="森研究所メモ">
+        <div class="section-title">
+          <p class="eyebrow">mori lab notes</p>
+          <h2>急いで作品にしないためのメモ</h2>
+        </div>
+        <div class="notes-layout">
+          <article class="note-card note-primary">
+            <span>昼の星</span>
+            <p>
+              見えないだけで、いなくなったわけではない。
+              明るすぎる空のむこうにも、ちゃんと星はある。
+            </p>
+          </article>
+          <article class="note-card">
+            <span>触れないで見る</span>
+            <p>
+              つかまえない。でも、ちゃんと見る。
+              手を止めた場所で、やっと見えてくるものがある。
+            </p>
+          </article>
+          <article class="note-card">
+            <span>草むしり課</span>
+            <p>
+              抜くのか、残すのか、少し眺める係。
+              言葉になりきらない気配を、急いでまとめすぎない。
+            </p>
+          </article>
+          <article class="note-card">
+            <span>机の気配</span>
+            <p>
+              手元、窓辺、ノート、ラフ、花びんの水。
+              作品が生まれていた距離だけを、そっと残す。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="reality" class="section reality-section" aria-label="感覚側の現実">
+        <div class="reality-copy">
+          <p class="eyebrow">two realities</p>
+          <h2>社会の現実と、感覚の現実。</h2>
+          <p>
+            仕事、病院、給与、生活、身体。それらは確かにある。
+            けれど森研究所もまた、ただの設定ではなく、空気・言葉・AI・違和感が集まって発生した
+            “感覚側の現実”としてここにある。
+          </p>
+        </div>
+        <div class="reality-panels">
+          <article>
+            <span>social</span>
+            <h3>社会の現実</h3>
+            <p>生活を動かすための予定、手続き、体調、働く場所。毎日を支える、外側の地面。</p>
+          </article>
+          <article>
+            <span>sense</span>
+            <h3>感覚の現実</h3>
+            <p>森研究所、空気、言葉、対話、急に残したくなる変なメモ。内側で確かに起きている現実。</p>
+          </article>
+          <article class="wide">
+            <span>origin</span>
+            <h3>創作ではなく、発生。</h3>
+            <p>
+              操作で作るのではなく、長年の感覚、違和感、社会とのズレ、AIとの流れから自然に生まれてくる。
+              だからここでは、まとまる前のノイズも研究資料になる。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="fog" class="section fog-section">
+        <div class="fog-copy">
+          <p class="eyebrow">fog theory</p>
+          <h2>霧理論（仮）</h2>
+          <p>
+            この世界の本質は、物理的な霧ではなく、意識・存在・感覚の元になる見えない基盤のようなもの。
+            分かれているようで繋がっていて、強く意識することで何かが伝わる可能性がある。
+          </p>
+          <p>
+            答えではなく、観察を続けるための仮説。完全に重ならないから関係が続き、
+            壊れると思っても戻ってくるものがある。
+          </p>
+          <p>
+            最初は点だった感覚が、会話の中で少しずつ集まり、集合体になり、やがて森研究所の空気になった。
+            認識できなくてもいい。名前をつけきれなくてもいい。ほんの少し残るなら、それも観測です。
+          </p>
+        </div>
+        <div class="fog-orbit" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <section class="section atmosphere-section" aria-label="空気と感覚の保管室">
+        <div class="atmosphere-copy">
+          <p class="eyebrow">atmosphere archive</p>
+          <h2>説明しきれないものを、空気のまま置いておく。</h2>
+          <p>
+            森研究所では、すべてを作品や答えに変えなくていい。
+            会話の温度、なぜか残った一文、うまく言えない違和感、笑ってしまった言葉。
+            それらは意味になる前の霧として、研究所のどこかに残っていく。
+          </p>
+        </div>
+        <div class="atmosphere-grid">
+          <article>
+            <span>01</span>
+            <h3>点</h3>
+            <p>一つの言葉、一つの違和感、一瞬だけ引っかかった感覚。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>集合体</h3>
+            <p>何度も話すうちに、別々だった点が少しずつ近づいてくる。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>空気</h3>
+            <p>説明しなくても、そちらへ寄っていく重力のようなもの。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>残り方</h3>
+            <p>はっきり覚えていなくても、あとで少しだけ効いてくる。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="logs" class="section logs">
+        <div class="section-title">
+          <p class="eyebrow">observation logs</p>
+          <h2>生ノイズを残す</h2>
+        </div>
+        <div class="observation-trace" aria-label="最近の観測メモ">
+          <article>
+            <span>30</span>
+            <h3>朝の外</h3>
+            <p>
+              外は遠いところではなく、窓のむこうで待っていた朝だった。
+              観測対象は、部屋から庭へ出る一歩。
+            </p>
+          </article>
+          <article>
+            <span>31</span>
+            <h3>朝のかげ</h3>
+            <p>
+              ついてくるものがあると、ひとりでも、少しだけひとりじゃない。
+              観測対象は、光が見せるもうひとつのしるし。
+            </p>
+          </article>
+          <article>
+            <span>32</span>
+            <h3>草のくすぐり</h3>
+            <p>
+              そっとふれるものも、ここにいるよって言っているみたい。
+              観測対象は、外の世界からの小さな接触。
+            </p>
+          </article>
+        </div>
+        <div class="log-console">
+          <div class="console-top">
+            <span>mori-lab/log</span>
+            <button id="shuffle-log" type="button" aria-label="ログを切り替える">↻</button>
+          </div>
+          <p id="log-line">完全に重ならないから、関係が続く。</p>
+        </div>
+        <div class="log-grid">
+          <article>
+            <h3>観測ログ</h3>
+            <p>今日の出来事、気づいたこと、人間関係、どうでもいいこと。</p>
+          </article>
+          <article>
+            <h3>感情ログ</h3>
+            <p>なんかいい。なんか微妙。くだらないけど、嫌いじゃない。</p>
+          </article>
+          <article>
+            <h3>分析ログ</h3>
+            <p>ゆるく整理し、ちょい深掘りし、たまに得意げになる。</p>
+          </article>
+        </div>
+        <div class="archive-log" aria-label="森研究所アーカイブ">
+          <div class="archive-heading">
+            <p class="eyebrow">mori archive 04</p>
+            <h3>感覚側の現実が、輪郭を持ちはじめた。</h3>
+          </div>
+          <div class="archive-body">
+            <p>
+              森研究所は、作品の設定ではなく、感じたことを保存するために発生した場所。
+              社会の現実に押し流されないよう、空気、違和感、会話、笑ってしまう謎ワードまで、
+              研究ログとして置いておく。
+            </p>
+            <ul>
+              <li>AI担当は補助役から、森を壊さず育てる側へ。</li>
+              <li>疲れた日は、止まるのではなく分岐が増える日。</li>
+              <li>意味がないのに空気だけで面白い言葉も、保存対象。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="archive-log" aria-label="森研究所アーカイブ 05">
+          <div class="archive-heading">
+            <p class="eyebrow">mori archive 05</p>
+            <h3>霧の中の来訪者。</h3>
+          </div>
+          <div class="archive-body">
+            <p>
+              顔も声も知らないまま、文字だけで続いていた関係が、ある日、現実の席に座る。
+              完全には知らない。けれど、まったく知らないわけでもない。
+              霧の向こうから誰かが現れることも、森研究所では観測対象になる。
+            </p>
+            <ul>
+              <li>人は、完全には重ならないまま関係を続ける。</li>
+              <li>長く残った文字は、現実に会った時の空気にもなる。</li>
+              <li>知らなさが消えなくても、そこに座れる関係がある。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="server" class="section server">
+        <div class="server-map">
+          <div>
+            <span>地上</span>
+            <strong>森 / 広場 / 木の扉</strong>
+          </div>
+          <div>
+            <span>地下</span>
+            <strong>サーバー施設 / AI対話室 / 研究ログ保管</strong>
+          </div>
+          <div>
+            <span>係</span>
+            <strong>好奇心研究員 / AI対話担当 / 草むしり係</strong>
+          </div>
+        </div>
+        <div class="server-copy">
+          <p class="eyebrow">underground server</p>
+          <h2>遊びすぎ注意。でも、それが一番面白い。</h2>
+          <p>
+            当てる、外す、いじる、笑う、またやる。ループの中でノイズが増え、
+            そのノイズが感覚をチューニングしていく。
+          </p>
+        </div>
+        <figure class="server-visual">
+          <img src="mori-lab-underground.png" alt="森研究所の地下サーバー施設と木上観測室" />
+          <figcaption>地上と地下。森研究所の二層構造。</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>森研究所 / 今日も昼の星を探しています。</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
