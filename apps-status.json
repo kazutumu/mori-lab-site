@@ -1,12 +1,83 @@
 {
-  "checkedAt": "2026-09-29",
+  "checkedAt": "2026-09-30",
   "storefront": "JP",
-  "note": "Status is per platform. In-review and waiting-for-review are not available for download. Sources checked through the public App Store and App Store Connect.",
+  "note": "Public availability verified on the Japanese App Store on 2026-09-30. Review statuses were last confirmed 2026-09-29; App Store Connect requires login today. An inaccessible product page is not evidence of rejection or non-publication.",
   "apps": [
-    {"id":"6816288116","name":"森のメモ帳","page":"notepad.html","priceJapan":"300 JPY","platforms":[{"name":"iPhone / iPad","status":"available","source":"https://apps.apple.com/jp/app/id6816288116"},{"name":"Mac","status":"in_review","source":"App Store Connect app list, macOS 1.0"}]},
-    {"id":"6815533406","name":"直感のゲーム","page":"intuition-game.html","priceJapan":"Free","platforms":[{"name":"iPhone / iPad","status":"available","source":"https://apps.apple.com/jp/app/id6815533406"}]},
-    {"id":"6814846496","name":"木漏れ日の観測林","page":"forest-observatory.html","priceJapan":"Free","platforms":[{"name":"Apple TV","status":"available","source":"https://apps.apple.com/jp/app/id6814846496"}]},
-    {"id":"6816843127","name":"水灯りの観測室","page":"waterlight.html","priceJapan":"300 JPY (planned)","platforms":[{"name":"Apple TV","status":"in_review","source":"App Store Connect app list, tvOS 1.0 in review, checked 2026-09-29"}]},
-    {"id":"6816899869","name":"森の車輪","page":"kururi.html","priceJapan":"Free","platforms":[{"name":"Apple Watch","status":"in_review","source":"App Store Connect app list, iOS container 1.0 in review (watchOS app), checked 2026-09-29"}]}
+    {
+      "id": "6816288116",
+      "name": "森のメモ帳",
+      "page": "notepad.html",
+      "priceJapan": "300 JPY",
+      "platforms": [
+        {
+          "name": "iPhone / iPad",
+          "status": "available",
+          "source": "https://apps.apple.com/jp/app/id6816288116",
+          "checkedAt": "2026-09-30"
+        },
+        {
+          "name": "Mac",
+          "status": "in_review",
+          "source": "App Store Connect app list, macOS 1.0",
+          "checkedAt": "2026-09-29"
+        }
+      ]
+    },
+    {
+      "id": "6815533406",
+      "name": "直感のゲーム",
+      "page": "intuition-game.html",
+      "priceJapan": "Free",
+      "platforms": [
+        {
+          "name": "iPhone / iPad",
+          "status": "available",
+          "source": "https://apps.apple.com/jp/app/id6815533406",
+          "checkedAt": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "id": "6814846496",
+      "name": "木漏れ日の観測林",
+      "page": "forest-observatory.html",
+      "priceJapan": "Free",
+      "platforms": [
+        {
+          "name": "Apple TV",
+          "status": "available",
+          "source": "https://apps.apple.com/jp/app/id6814846496",
+          "checkedAt": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "id": "6816843127",
+      "name": "水灯りの観測室",
+      "page": "waterlight.html",
+      "priceJapan": "300 JPY",
+      "platforms": [
+        {
+          "name": "Apple TV",
+          "status": "available",
+          "source": "https://apps.apple.com/jp/app/id6816843127",
+          "checkedAt": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "id": "6816899869",
+      "name": "森の車輪",
+      "page": "kururi.html",
+      "priceJapan": "Free",
+      "platforms": [
+        {
+          "name": "Apple Watch",
+          "status": "in_review",
+          "source": "App Store Connect app list, iOS container 1.0 in review (watchOS app), checked 2026-09-29",
+          "checkedAt": "2026-09-29"
+        }
+      ]
+    }
   ]
 }
