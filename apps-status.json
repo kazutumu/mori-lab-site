@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-09-30",
+  "checkedAt": "2026-10-01",
   "storefront": "JP",
-  "note": "Public availability verified on the Japanese App Store on 2026-09-30. Review statuses were last confirmed 2026-09-29; App Store Connect requires login today. An inaccessible product page is not evidence of rejection or non-publication.",
+  "note": "Public availability verified on the Japanese App Store on 2026-10-01, including the Mac listing for Forest Notepad. Forest Wheel remains in review based on a user-provided App Store Connect screenshot dated 2026-10-01 07:53 JST. Its public page could not be found during this check; that alone is not evidence of rejection or non-publication.",
   "apps": [
     {
       "id": "6816288116",
@@ -13,13 +13,13 @@
           "name": "iPhone / iPad",
           "status": "available",
           "source": "https://apps.apple.com/jp/app/id6816288116",
-          "checkedAt": "2026-09-30"
+          "checkedAt": "2026-10-01"
         },
         {
           "name": "Mac",
-          "status": "in_review",
-          "source": "App Store Connect app list, macOS 1.0",
-          "checkedAt": "2026-09-29"
+          "status": "available",
+          "source": "https://apps.apple.com/jp/app/id6816288116",
+          "checkedAt": "2026-10-01"
         }
       ]
     },
@@ -33,7 +33,7 @@
           "name": "iPhone / iPad",
           "status": "available",
           "source": "https://apps.apple.com/jp/app/id6815533406",
-          "checkedAt": "2026-09-30"
+          "checkedAt": "2026-10-01"
         }
       ]
     },
@@ -47,7 +47,7 @@
           "name": "Apple TV",
           "status": "available",
           "source": "https://apps.apple.com/jp/app/id6814846496",
-          "checkedAt": "2026-09-30"
+          "checkedAt": "2026-10-01"
         }
       ]
     },
@@ -61,7 +61,7 @@
           "name": "Apple TV",
           "status": "available",
           "source": "https://apps.apple.com/jp/app/id6816843127",
-          "checkedAt": "2026-09-30"
+          "checkedAt": "2026-10-01"
         }
       ]
     },
@@ -74,8 +74,8 @@
         {
           "name": "Apple Watch",
           "status": "in_review",
-          "source": "App Store Connect app list, iOS container 1.0 in review (watchOS app), checked 2026-09-29",
-          "checkedAt": "2026-09-29"
+          "source": "User-provided App Store Connect screenshot, 2026-10-01 07:53 JST: iOS container 1.0 in review (watchOS app)",
+          "checkedAt": "2026-10-01"
         }
       ]
     }
