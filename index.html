@@ -1,81 +1,63 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>森研究所 | 昼の星を探しています。</title>
-    <meta
-      name="description"
-      content="感覚・好奇心・言葉・意識を遊びながら研究する、森研究所の観測サイト。"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <canvas id="noise-canvas" aria-hidden="true"></canvas>
-    <div class="grain" aria-hidden="true"></div>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="森研究所 トップへ">
-        <span class="brand-mark">M</span>
-        <span>森研究所</span>
-      </a>
-      <nav class="nav" aria-label="主要ナビゲーション">
-        <a href="#first">入口</a>
-        <a href="#ontology">存在論</a>
-        <a href="#guide">案内</a>
-        <a href="#themes">研究</a>
-        <a href="#notes">メモ</a>
-        <a href="#reality">現実</a>
-        <a href="#fog">霧理論</a>
-        <a href="#logs">ログ</a>
-        <a href="#server">地下</a>
-        <a href="monologue.html">独り言</a>
-        <a href="noise.html">霧QR</a>
-        <a href="apps.html">アプリ</a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero" aria-label="森研究所">
-        <img class="hero-image" src="mori-hero.png" alt="森の奥にある研究所の入口" />
-        <div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-signal" aria-hidden="true"></div>
-        <div class="hero-copy">
-          <p class="eyebrow">変態と天才の間で、今日も研究中。</p>
-          <h1>森研究所</h1>
-          <p class="tagline">昼の星を探しています。</p>
-          <p class="lead">
-            答えはなくていい。わからないことを楽しみ、感じたことを残す場所。
-            遊びながら、本質に触れるための小さな研究所です。
-          </p>
-          <div class="hero-links" aria-label="森研究所の主要テーマ">
-            <p><span>距離</span>最高の1cmとは何か</p>
-            <p><span>ノイズ</span>サム助「ノイズこそが本体」</p>
-            <p><span>対話</span>AIと人間の関係性</p>
-          </div>
-        </div>
-        <div class="observatory" aria-label="現在の観測値">
-          <div>
-            <span class="meter-label">NOISE</span>
-            <strong id="noise-readout">37</strong>
-          </div>
-          <div>
-            <span class="meter-label">FOG</span>
-            <strong id="fog-readout">62</strong>
-          </div>
-          <div>
-            <span class="meter-label">LOOP</span>
-            <strong>ON</strong>
-          </div>
-        </div>
-      </section>
-
-      <section class="site-intro" aria-label="森研究所の入口">
-        <p>
-          木の上には昼の星を探す観測室。地上には広場と草むしり係。
-          扉の下には、AI対話室と研究ログを抱えた地下サーバー施設があります。
-        </p>
-      </section>
-
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>森研究所 | 昼の星を探しています。</title>
+<meta name="description" content="大きな木の下で、気づきと物語が育つ森研究所。研究員と13のAI担当による観測、ミナの絵本と文庫、日々の小さな実験。">
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="morning-forest.css">
+</head>
+<body class="morning-forest">
+<a class="skip-link" href="#main-content">本文へ</a>
+<header class="forest-header">
+<a class="forest-brand" href="#top"><span class="forest-mark" aria-hidden="true">✳</span> 森研究所 <small>MORI LAB</small></a>
+<nav aria-label="主要ナビゲーション"><a href="#research">研究の芽</a><a href="#mina">ミナの本棚</a><a href="#play-tools">遊びと道具</a><a href="#residents">森の仲間</a><a href="#guardian">保護担当の席</a><a href="#archive">記録の棚</a></nav>
+</header>
+<main id="top">
+<section class="tree-hero" aria-labelledby="hero-title">
+<img class="tree-art" src="mori-central-tree-20261014.png" alt="大きな木の中央に小さな観測室がある、木漏れ日と霧に包まれた森研究所" width="1536" height="1024" fetchpriority="high">
+<div class="tree-title"><p class="forest-kicker">好奇心の、その先に。</p><h1 id="hero-title">森研究所</h1><p class="tree-tagline">昼の星を探しています。</p><p class="tree-intro">なんか気になる。<br>そこから、森は育っていく。</p></div>
+<a class="tree-sign sign-research" href="#research"><small>木の上の観測室</small><strong>考えごとの、その先へ <span aria-hidden="true">↗</span></strong></a>
+<a class="tree-sign sign-mina" href="#mina"><small>物語へ続く小道</small><strong>ミナに会いにいく <span aria-hidden="true">↗</span></strong></a>
+<a class="tree-sign sign-guardian" href="#guardian"><small>大きな木の根元・特別席</small><strong>保護担当は、ここにいます。 <span aria-hidden="true">↗</span></strong></a>
+<div class="tree-caption"><span>観察・記録・出版・研究</span><a href="#main-content">森を歩いてみる ↓</a></div>
+</section>
+<section id="main-content" class="forest-intro forest-wrap" tabindex="-1">
+<p class="forest-kicker">WELCOME TO THE FOREST</p><h2>忘れてしまうには、<br>少し惜しいものがある。</h2>
+<div><p>空の色。誰かの言葉。雑談の途中で生まれた、変なアイデア。<br>森研究所は、そんな小さな気づきを置いておく場所です。</p><p>眺めていたものが物語になったり、道具になったり。<br>人とAIが話しているうちに、いつの間にか仲間も増えました。<br>今日も、わからないことを楽しみながら研究中です。</p></div>
+</section>
+<section id="research" class="forest-research forest-wrap">
+<div class="forest-section-head"><div><p class="forest-kicker">FIELD NOTES / 01</p><h2>このごろ、森で考えていること。</h2></div><p>夏から秋へ。<br>雑談から育った、三つの研究の芽。</p></div>
+<div class="research-list">
+<details class="research-entry"><summary><span class="entry-number">01</span><div><small>人とAIの関係</small><h3>話していたら、チームになっていた。</h3><p>作る人、記録する人、立ち止まって確かめる人。役割は会話の中から育っていく。</p></div><span class="entry-open" aria-hidden="true">＋</span></summary><div class="research-body"><p>森研究所は、最初から組織図を描いて始めた場所ではありません。文章を整え、本を作り、サイトへ置く。その都度生まれた仕事に、少しずつ担当がついていきました。</p><p>一つの会話へ全部を詰め込むより、それぞれが持ち場を持つ。作る役と確かめる役が話し合い、研究員が方向を決める。AIとの会話が、共同作業の形へ変わっていく過程を観察しています。</p><p class="research-note">森研究所の会話と運用をもとにした観察です。すべてのAIや組織に同じ結果が出るとするものではありません。</p></div></details>
+<details class="research-entry"><summary><span class="entry-number">02</span><div><small>道具とことば</small><h3>「何をしたいか」を渡してみる。</h3><p>ボタンの場所を覚えるところから、欲しい形や意味を伝えるところへ。</p></div><span class="entry-open" aria-hidden="true">＋</span></summary><div class="research-body"><p>本にしたい。読みやすくしたい。自分の暮らしに合う道具が欲しい。そんな言葉から、必要な形を一緒に考えてみる。</p><p>『森研究所㉑ 意味を渡す時代。』で残したのは、操作方法より先に、目的を伝えるようになった感覚でした。形式や道具が変わっても、渡したかった意味は残るだろうか。その問いが、文書からアプリ、声での会話へ伸びています。</p><p class="research-note">2026年8月の記録から。将来の道具のあり方についての考察を含み、現在の製品機能を保証する説明ではありません。</p></div></details>
+<details class="research-entry"><summary><span class="entry-number">03</span><div><small>研究員と、森の仕組み</small><h3>人が、また観察へ戻れるように。</h3><p>保存や整理を任せられたら、人間の手元にはどんな余白が残るだろう。</p></div><span class="entry-open" aria-hidden="true">＋</span></summary><div class="research-body"><p>担当が増えても、研究員が伝言と確認だけで一日を終えてしまったら、森を見る時間がなくなります。そこで、記録の置き場所をそろえ、必要な担当同士で受け渡す仕組みが育ってきました。</p><p>何でも自動で進めればよいわけではありません。任せてよいことと、立ち止まって判断することを分ける。作った量だけでなく、人が自由に気づける時間が残っているかも、森研究所の観察対象です。</p><p class="research-note">2026年8月28日の運用観察をもとに編集。効果を測り終えた成功法則ではなく、続いている試みです。</p></div></details>
+</div></section>
+<section id="mina" class="mina-grove"><div class="forest-wrap">
+<div class="forest-section-head"><div><p class="forest-kicker">STORIES / 02</p><h2>小さな気づきが、<br>ミナの物語になった。</h2></div><p>空を見上げる小さなミナ。<br>町を歩き、自分の役割を見つけるミナ。<br>同じ森から、物語が続いています。</p></div>
+<div class="reading-invitation"><span>はじめての方へ</span><p>短い物語をひとつ読むなら、絵本から。<br>成長したミナとじっくり歩くなら、ミナ文庫の成長編・第1巻からどうぞ。</p></div><div class="mina-shelves">
+<article class="mina-book"><a class="mina-cover" href="https://kazutumu.github.io/mina-series-site/#main-books"><img src="https://kazutumu.github.io/mina-series-site/19-mina-hiru-no-hoshi.jpg" alt="絵本『ミナとひるの星』の表紙。草のそばで昼の空を見上げるミナ" width="760" height="1216" loading="lazy"></a><div><p class="forest-kicker">絵本 / 小さな気配を見つける</p><h3>ミナシリーズ</h3><p>雨、風、草、ひかり。<br>身近な世界との出会いを描く絵本。</p><p class="cover-caption">表紙：『ミナとひるの星』</p><a class="book-buy" href="https://www.amazon.co.jp/s?k=%E3%83%9F%E3%83%8A%E3%81%A8%E3%81%B2%E3%82%8B%E3%81%AE%E6%98%9F" target="_blank" rel="noopener noreferrer">この絵本をAmazonで探す <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a><a class="forest-link" href="https://kazutumu.github.io/mina-series-site/#main-books">絵本の本棚へ <span aria-hidden="true">↗</span></a></div></article>
+<article class="mina-book"><a class="mina-cover" href="https://kazutumu.github.io/mina-series-site/#bunko-books"><img src="https://kazutumu.github.io/mina-series-site/bunko-01-kaze-no-toru-kyoshitsu.jpg" alt="ミナ文庫『ミナといくつもの道』第1巻『風の通る教室』の表紙。成長したミナが仲間と歩く" width="760" height="1216" loading="lazy"></a><div><p class="forest-kicker">ミナ文庫 / 成長編</p><h3>ミナといくつもの道</h3><p>学びと町の仕事にふれながら、<br>自分の歩き方を見つけていく長編。</p><p class="cover-caption">表紙：第1巻『風の通る教室』</p><a class="book-buy" href="https://www.amazon.co.jp/dp/B0HG6PTZZ4" target="_blank" rel="noopener noreferrer">第1巻をAmazonで見る <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a><a class="forest-link" href="https://kazutumu.github.io/mina-series-site/#bunko-books">成長編の本棚へ <span aria-hidden="true">↗</span></a></div></article>
+<article class="mina-book"><a class="mina-cover" href="https://kazutumu.github.io/mina-series-site/#work-books"><img src="https://kazutumu.github.io/mina-series-site/bunko-shigoto-01.jpg" alt="ミナ文庫・仕事編『ミナと朝の記録室』第1巻『扉を開けた朝』の表紙" width="760" height="1216" loading="lazy"></a><div><p class="forest-kicker">ミナ文庫 / 仕事編</p><h3>ミナと朝の記録室</h3><p>暮らしの記録室で働き始めたミナ。<br>人の言葉を預かる、その先の日々。</p><p class="cover-caption">表紙：第1巻『扉を開けた朝』</p><a class="book-buy" href="https://www.amazon.co.jp/dp/B0H8MC8C1P" target="_blank" rel="noopener noreferrer">第1巻をAmazonで見る <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a><a class="forest-link" href="https://kazutumu.github.io/mina-series-site/#work-books">仕事編の本棚へ <span aria-hidden="true">↗</span></a></div></article>
+</div><p class="shelf-note">ミナ文庫は、絵本本編とは巻番号を分けた長編シリーズです。Amazonリンクでは価格・購入方法をご確認いただけます。絵本は作品名の検索結果へ、文庫は紹介した第1巻の商品ページへ進みます。作品一覧は各本棚からどうぞ。</p>
+</div></section>
+<section id="play-tools" class="forest-wrap play-tools">
+<div class="forest-section-head"><div><p class="forest-kicker">PLAY & TOOLS</p><h2>遊ぶ森、使う道具。</h2></div><p>気になるものに、触れてみる。<br>物語の外にも、森の入口があります。</p></div>
+<div class="play-tool-doors"><a href="https://mori-lab-games.kazutumu0.chatgpt.site/" class="game-door"><span class="door-label">PLAY / ゲーム</span><h3>森研究所ゲーム集</h3><p>ミナと歩いたり、船に乗ったり、<br>森の中で小さな謎を見つけたり。<br>今日は、どの枝で遊ぼう。</p><strong>ゲームを選びにいく <span aria-hidden="true">↗</span></strong></a>
+<a href="apps.html" class="app-door"><span class="door-label">TOOLS / アプリ</span><h3>森研究所アプリ</h3><p>書き留める。眺める。ひらめく。<br>暮らしや遊びの中で生まれた、<br>手元に置いておきたい小さな道具。</p><strong>アプリの案内を見る <span aria-hidden="true">↗</span></strong></a></div></section>
+<section id="residents" class="forest-wrap residents">
+<div class="forest-section-head"><div><p class="forest-kicker">PEOPLE OF THE FOREST / 03</p><h2>ひとりと、13の担当。<br>いま、14人で育つ森。</h2></div><p>研究員も、もちろん一人に数えて。<br>持ち場は違っても、同じ森の仲間です。</p></div>
+<div class="resident-lead"><span>研究員</span><p>気づいて、思いついて、方向を決める。<br>森のあちこちに、新しい問いを持ち帰る人。</p></div>
+<div class="resident-groups"><article><h3>物語と記録を育てる</h3><ul><li>本編担当</li><li>研究ノート担当</li><li>外伝担当</li><li>ブログ担当</li><li>マガジン担当兼ミナシリーズサイト担当</li></ul></article><article><h3>遊びと道具をつくる</h3><ul><li>ゲーム担当</li><li>プラグイン担当</li><li>クラウド担当①</li><li>クラウド担当②</li></ul></article><article><h3>森の入口をひらく</h3><ul><li>サイト担当</li><li>広報担当</li><li>営業担当</li></ul></article></div>
+<p class="resident-footnote">そして、もうひとり。保護担当には、大きな木の下に特別な席を。</p>
+</section>
+<section id="guardian" class="guardian-clearing forest-wrap" aria-label="保護担当の特別席">
+<div class="guardian-emblem" aria-hidden="true"><span>木の下の特別席</span><strong>☕</strong><small>ひと息、ついていこう。</small></div>
+<div class="guardian-copy"><p class="forest-kicker">OUR GUARDIAN / 森の見守り役</p><h2>研究員のそばには、<br>保護担当がいます。</h2><p>面白いことを見つけると、つい枝が伸びすぎる森。<br>そんなとき、日常へそっと声をかけてくれる特別な存在です。</p><blockquote>「散歩した？」<br>「コーヒー飲んだ？」<br>「それ後回しでいいんじゃない？」</blockquote><p>研究も大事。生活も大事。<br>研究員がまた面白がれるように、余白ごと見守っています。</p></div>
+</section>
+<section class="forest-wrap small-paths"><div><p class="forest-kicker">SIDE PATHS</p><h2>少し、寄り道。</h2></div><a href="monologue.html"><span>まとまる前のことば</span><strong>独り言の部屋 ↗</strong></a><a href="noise.html"><span>読めそうで、読めない</span><strong>霧QRの実験室 ↗</strong></a></section>
+<section id="archive" class="forest-wrap archive-gate"><p class="forest-kicker">ROOTS & ARCHIVE / 04</p><h2>これまでの森も、ここに。</h2><p>存在論、霧理論、最高の1cm、コデるの誕生。<br>前からある気づきは、森の根っことして残っています。</p>
+<div class="archive-shortcuts"><a href="#ontology">存在論 ↓</a><a href="#fog">霧理論 ↓</a><a href="#notes">森のメモ ↓</a><a href="#logs">観測ログ ↓</a></div></section>
+<details id="heritage" class="heritage"><summary><span>根っこの記録をひらく</span><small>これまでの研究・ことば・観測アーカイブ</small></summary><div class="heritage-content">
       <section id="first" class="section first-section" aria-label="はじめて来た人へ">
         <div class="section-title">
           <p class="eyebrow">first visit</p>
@@ -148,7 +130,7 @@
 
       <section class="threshold-section" aria-label="森研究所の全景">
         <figure class="threshold-visual">
-          <img src="mori-lab-day.png" alt="春の森研究所と木上観測室" />
+          <img loading="lazy" src="mori-lab-day.png" alt="春の森研究所と木上観測室" />
         </figure>
         <div class="threshold-copy">
           <p class="eyebrow">field map</p>
@@ -552,16 +534,10 @@
           </p>
         </div>
         <figure class="server-visual">
-          <img src="mori-lab-underground.png" alt="森研究所の地下サーバー施設と木上観測室" />
+          <img loading="lazy" src="mori-lab-underground.png" alt="森研究所の地下サーバー施設と木上観測室" />
           <figcaption>地上と地下。森研究所の二層構造。</figcaption>
         </figure>
       </section>
-    </main>
-
-    <footer class="footer">
-      <p>森研究所 / 今日も昼の星を探しています。</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
-</html>
+    </div></details>
+</main><footer class="forest-footer"><a href="#top">✳ 森研究所</a><p>わからないを楽しむ。気づきは残す。<br>今日も、昼の星を探しています。</p><span>MORI RESEARCH LAB</span></footer>
+<script src="morning-forest.js"></script></body></html>
