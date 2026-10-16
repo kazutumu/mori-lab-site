@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-10-06",
   "storefront": "JP",
-  "note": "Public availability rechecked on the Japanese App Store on 2026-10-06. Toi to Yohaku is now available for iPhone and iPad. Forest Wheel retains its last verified review status from October 1; a public URL error alone does not establish its current status.",
+  "note": "Public availability rechecked on the Japanese App Store on 2026-10-06. Toi to Yohaku is available for iPhone and iPad.",
   "apps": [
     {
       "id": "6816288116",
@@ -61,20 +61,6 @@
           "name": "Apple TV",
           "status": "available",
           "source": "https://apps.apple.com/jp/app/id6816843127",
-          "checkedAt": "2026-10-01"
-        }
-      ]
-    },
-    {
-      "id": "6816899869",
-      "name": "森の車輪",
-      "page": "kururi.html",
-      "priceJapan": "Free",
-      "platforms": [
-        {
-          "name": "Apple Watch",
-          "status": "in_review",
-          "source": "User-provided App Store Connect screenshot, 2026-10-01 07:53 JST: iOS container 1.0 in review (watchOS app)",
           "checkedAt": "2026-10-01"
         }
       ]
