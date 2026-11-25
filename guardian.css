@@ -1,0 +1,26 @@
+.guardian-portrait {
+  margin: 0;
+  min-width: 0;
+}
+
+.guardian-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 52px 6px 36px 6px;
+  box-shadow: 0 10px 28px #33402b20;
+}
+
+.guardian-portrait figcaption {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #526048;
+}
+
+.guardian-paths {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin-top: 20px;
+}
